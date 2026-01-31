@@ -1,7 +1,4 @@
-An FX 82 scientific calculator clone sounds more serious than a generic calculator.
-It shows you recreated a real device with logic and functions. Admissions like this. It feels practical and engineering focused.
-Here’s a sharper, more professional README tailored to an FX 82 style calculator.
-Replace your old calculator README with this.
+
 Scientific Calculator README
 Project Title
 FX 82 Scientific Calculator Simulator in Python
@@ -40,7 +37,4 @@ Calculation history
 Memory functions like a real FX 82
 Author
 Seth Sanyanda
-This wording does three things
-sounds technical
-shows engineering thinking
-proves you built a real system, not a toy
+
