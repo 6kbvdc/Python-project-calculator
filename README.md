@@ -1,40 +1,58 @@
 
-Scientific Calculator README
-Project Title
-FX 82 Scientific Calculator Simulator in Python
+FX 82 Python Calculator
+Submitted by: Seth Sanyanda
+Email: sethwekesa73@gmail.com
+Phone: +254712719369
 Description
-This project is a Python based simulator of the Casio FX 82 scientific calculator. It replicates common scientific calculator functions in software and allows users to perform fast and accurate mathematical computations from the command line. I built it to practice implementing real world tools using code and to strengthen my problem solving and logic design skills.
+A Python-based scientific calculator that supports basic arithmetic, advanced mathematical functions, constants, and parentheses. It runs in a command-line interface and allows switching between degrees and radians for trigonometric calculations.
 Problem Solved
-Students often rely on physical calculators for scientific operations. This project recreates those features digitally and automates calculations with consistent accuracy. It demonstrates how software can replace and extend hardware tools.
+Traditional calculators are physical and limited to manual use. This project provides a digital calculator that can handle complex expressions, trigonometry, logarithms, powers, and factorials with immediate results.
 Features
-Basic arithmetic, addition, subtraction, multiplication, division
-Powers and roots
-Trigonometric functions, sin, cos, tan
-Logarithms and exponentials
-Factorials and scientific functions
-Error handling for invalid input
-Menu driven interface similar to a real calculator
+Basic arithmetic: +, -, *, /, %, **
+Advanced functions: sin, cos, tan, asin, acos, atan, sqrt, log, ln, factorial
+Constants: pi, e
+Nested parentheses
+Switch between degrees and radians for trig functions
+Command-line interface for quick calculations
+Type exit to quit
+How to Run
+Save the code as calculator.py.
+Open Python 3 or Pydroid 3.
+Run the program:
+Copy code
+
+python calculator.py
+Enter mathematical expressions to calculate results.
+Type mode to toggle between degrees and radians.
+Type exit to close the calculator.
+Sample Session
+Copy code
+
+=== FX 82 Python Calculator ===
+Enter expression: 2 + 3*4
+Result: 14
+
+Enter expression: sqrt(16) + sin(30)
+Result: 4.5
+
+Enter expression: factorial(5)
+Result: 120
+
+Enter expression: mode
+Switched to Radians mode.
+
+Enter expression: exit
+Exiting calculator.
 Tools Used
 Python 3
-Math library
-How to Run
-Install Python 3
-Download the project files
-Open terminal in the project folder
-Run python calculator.py
-Program Structure
-The program uses functions for each operation and a control loop to process user input. This structure keeps the code modular, readable, and easy to extend with new features.
-What I Learned
-Translating a physical device into software logic
-Writing modular functions
-Handling user input safely
-Debugging calculation errors
-Designing clear program flow
+Standard Python libraries (math)
+Skills Demonstrated
+Programming and problem-solving
+Handling arithmetic and scientific functions
+Input validation and error handling
+Modular and readable code design
 Future Improvements
-Graphical user interface
-Expression based input
-Calculation history
-Memory functions like a real FX 82
-Author
-Seth Sanyanda
-
+Add GUI interface
+Include memory functions like M+, MR
+Support for more scientific functions like hyperbolic trig
+Author: Seth Sanyanda
