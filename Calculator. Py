@@ -1,0 +1,66 @@
+import math
+
+# --- Calculator Settings ---
+angle_mode = "DEG"  # DEG or RAD
+
+# --- Helper Functions ---
+def set_mode():
+    global angle_mode
+    if angle_mode == "DEG":
+        angle_mode = "RAD"
+        print("Switched to Radians mode.\n")
+    else:
+        angle_mode = "DEG"
+        print("Switched to Degrees mode.\n")
+
+def compute(expr):
+    try:
+        # Replace constants
+        expr = expr.replace("pi", str(math.pi)).replace("e", str(math.e))
+
+        # Replace functions
+        expr = expr.replace("sin", "math.sin")
+        expr = expr.replace("cos", "math.cos")
+        expr = expr.replace("tan", "math.tan")
+        expr = expr.replace("asin", "math.asin")
+        expr = expr.replace("acos", "math.acos")
+        expr = expr.replace("atan", "math.atan")
+        expr = expr.replace("sqrt", "math.sqrt")
+        expr = expr.replace("log", "math.log10")
+        expr = expr.replace("ln", "math.log")
+        expr = expr.replace("factorial", "math.factorial")
+
+        # Evaluate expression
+        result = eval(expr)
+
+        # Adjust trig for degrees
+        if angle_mode == "DEG":
+            if "sin" in expr:
+                result = math.sin(math.radians(result))
+            if "cos" in expr:
+                result = math.cos(math.radians(result))
+            if "tan" in expr:
+                result = math.tan(math.radians(result))
+        return result
+    except Exception as e:
+        return "Error: " + str(e)
+
+# --- Main Loop ---
+def main():
+    print("=== FX 82 Python Calculator ===")
+    print("Type 'exit' to quit, 'mode' to switch degrees/radians.")
+    while True:
+        expr = input("Enter expression: ").strip()
+        if expr.lower() == "exit":
+            print("Exiting calculator.")
+            break
+        elif expr.lower() == "mode":
+            set_mode()
+        elif expr == "":
+            continue
+        else:
+            result = compute(expr)
+            print("Result:", result, "\n")
+
+if __name__ == "__main__":
+    main()
