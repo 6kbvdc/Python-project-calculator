@@ -3,10 +3,14 @@ FX 82 Python Calculator
 Submitted by: Seth Sanyanda
 Email: sethwekesa73@gmail.com
 Phone: +254712719369
+
+
 Description
 A Python-based scientific calculator that supports basic arithmetic, advanced mathematical functions, constants, and parentheses. It runs in a command-line interface and allows switching between degrees and radians for trigonometric calculations.
+
 Problem Solved
 Traditional calculators are physical and limited to manual use. This project provides a digital calculator that can handle complex expressions, trigonometry, logarithms, powers, and factorials with immediate results.
+
 Features
 Basic arithmetic: +, -, *, /, %, **
 Advanced functions: sin, cos, tan, asin, acos, atan, sqrt, log, ln, factorial
@@ -46,6 +50,7 @@ Exiting calculator.
 Tools Used
 Python 3
 Standard Python libraries (math)
+
 Skills Demonstrated
 Programming and problem-solving
 Handling arithmetic and scientific functions
@@ -55,4 +60,5 @@ Future Improvements
 Add GUI interface
 Include memory functions like M+, MR
 Support for more scientific functions like hyperbolic trig
+
 Author: Seth Sanyanda
