@@ -46,6 +46,9 @@ What I learned:
 • Building interactive CLI tools
 
 
+How I used AI:
+I used AI (ChatGPT) as a tutor to clarify Python syntax, understand functions in the math module, and troubleshoot errors while building the calculator. All logic, code, and design decisions were written and implemented by me.
+
 
 Author
 Seth Sanyanda
